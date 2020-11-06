@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e09c9338d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Coctails App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Coctail Finder</h1>
+      <div class="options">
+        <button class="by-name option" id="by-name">
+          <i class="fas fa-cocktail"></i>
+          <h4>Search by name</h4>
+        </button>
+        <button class="by-ingredient option btn-disabled" id="by-ingredient">
+          <i class="fas fa-flask"></i>
+          <h4>Search by ingredient</h4>
+        </button>
+        <button class="random option btn-disabled" id="random">
+          <i class="fas fa-random"></i>
+          <h4>Random search</h4>
+        </button>
+
+        <!-- <button class="favorites"><i class="fas fa-heart"></i>
+            </button>
+            <button class="memory"><i class="fas fa-list"></i>
+            </button> -->
+
+        <!-- Chevron left and right  -->
+        <button class="chevron-left" id="chevron-left">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="chevron-right" id="chevron-right">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="flex" id="form-container">
+        <form class="flex" id="submit1">
+          <input type="text" id="search1" placeholder="Search by name" />
+          <button class="search-btn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <div id="result-heading"></div>
+      <div class="single-coctail-container" id="single-coctail-container"></div>
+      <div class="coctails" id="coctails"></div>
+      <!-- <div class="ingredients" id="ingredients"></div> -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
